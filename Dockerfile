@@ -34,4 +34,4 @@ RUN tailwindcss -i web/styles/input.css -o web/assets/css/output.css --minify
 
 EXPOSE 8000
 
-CMD ["uv", "run", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--ssl-keyfile=/app/certs/privkey.pem", "--ssl-certfile=/app/certs/fullchain.pem"]
+CMD ["uv", "run", "uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--ssl-keyfile=/etc/letsencrypt/live/web.vicolby.space/privkey.pem", "--ssl-certfile=/etc/letsencrypt/live/web.vicolby.space/fullchain.pem"]
