@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="h-screen">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Template Project</title>
+        <link href="web/assets/css/output.css" rel="stylesheet" />
+        <script src="web/assets/js/htmx.min.js"></script>
+    </head>
+    <body class="bg-base-100">
+        <main id="main">
+            <div
+                id="toast-message"
+                class="toast toast-top toast-center hidden fixed z-50"
+            >
+                <div id="toast-alert" class="alert alert-error">
+                    <span></span>
+                </div>
+            </div>
+            <div id="main-container">
+                <h1>{{ msg }}</h1>
+            </div>
+        </main>
+    </body>
+</html>
